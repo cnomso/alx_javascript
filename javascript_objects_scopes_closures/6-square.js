@@ -2,12 +2,9 @@
 
 // a class square that inherits from class Rectangle 
 
-const Rectangle = require('./4-rectangle');
+const SquareFive = require('./5-square');
 
-class Square extends Rectangle {
-  constructor (size) {
-    super(size,size);
-  }
+class Square extends SquareFive {
   charPrint(c){
     for (let i = 0; i < this.height; i++) {
         console.log('C'.repeat(this.width));
