@@ -9,9 +9,12 @@ class Rectangle {
         
             this.width = w;
             this.height = h; 
-        }
+        }  
      
     }
+    print() {
+        console.log('X');
+    }  
     
 }
 
