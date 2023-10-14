@@ -1,9 +1,10 @@
 const request = require('request');
+const url = process.argv[2];
 
 
-request('http://www.google.com', (error, response, body) => {
-    if (!error && response.statusCode === 200) {
-        console.log('code: ' + response.statusCode);
+request.get(url, (error, response) => {
+    if (error) {
+        console.error('Error:', error);
     } else {
         console.log('code: ' + response.statusCode);
     }
